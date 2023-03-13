@@ -1,0 +1,131 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 600px;
+    padding: 0;
+    margin: 0;
+}
+
+/*Formatação do cabeçalho*/
+
+#head{
+    padding: 10px 0 10px 0;
+    background-color: powderblue;
+}
+
+#areaUsuario{
+    width: 80%;
+    margin: auto;
+}
+
+#conteudoHead{
+    width: 1200px;
+    margin: auto;
+}
+
+#usuario{
+    width: 190px;
+    float: right;
+    margin-top: -35px;
+    margin-right: 1%;
+}
+
+#icons{
+    float: right;
+    margin: -20px 10px 0 0;
+}
+
+#conteudoHead h1{
+    font-size: 50pt;
+    padding: 0;
+    margin: 0;
+    width: 290px;
+}
+
+/*Fim Cabeçalho*/
+
+/*Barra de pesquisa*/
+
+#barraPesquisa{
+    width: 45%;
+    margin-left: 32%;
+    margin-top: -50px;
+    height: 30px;
+}
+
+#barra{
+    width: 80%;
+    height: 93%;
+    float: left;
+    border: none;
+    background-color: oldlace;
+    border-radius: 5px 0 0 5px;
+}
+
+#bttPesquisa{
+    width: 65px;
+    height: 100%;
+    border: none;
+    float: left;
+    border-radius: 0 5px 5px 0;
+    background-color: lightseagreen;
+}
+
+#bttPesquisa:hover{
+    background-color: cadetblue;
+}
+
+#bttPesquisa:active{
+    background-color: dodgerblue;
+}
+
+/*Fim Barra de pesquisa*/
+
+/*Menus Dropdown*/
+
+/*Fim menus dropdown*/
+
+/*conteudo do site*/
+
+.carousel{
+    position: relative;
+}
+
+.carouselItem{
+    height: 300px;
+    background-color: gray;
+    padding: 1em;
+    display: none;
+}
+
+.carouselItem-selected{
+    display: block;
+}
+
+.carouselNav{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carouselButton{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carouselButton-selected{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*Fim conteudo do site*/
+
+.clear{
+    clear: both;
+}
