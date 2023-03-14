@@ -3,12 +3,13 @@ body{
     min-width: 600px;
     padding: 0;
     margin: 0;
+    background-color: thistle;
 }
 
 /*Formatação do cabeçalho*/
 
 #head{
-    padding: 10px 0 10px 0;
+    padding: 10px 0 0 0;
     background-color: powderblue;
 }
 
@@ -23,7 +24,7 @@ body{
 }
 
 #usuario{
-    width: 190px;
+    width: 210px;
     float: right;
     margin-top: -35px;
     margin-right: 1%;
@@ -34,12 +35,38 @@ body{
     margin: -20px 10px 0 0;
 }
 
+#icons a{
+    padding: 0 2.5px;
+}
+
 #conteudoHead h1{
     font-size: 50pt;
     padding: 0;
     margin: 0;
     width: 290px;
 }
+
+#conteudoHead h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+#departamentos{
+    text-align: center;
+}   
+
+#departamentos li{
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    color: black;
+}
+
+#departamentos li:hover{
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+
 
 /*Fim Cabeçalho*/
 
@@ -80,48 +107,119 @@ body{
 
 /*Fim Barra de pesquisa*/
 
-/*Menus Dropdown*/
-
-/*Fim menus dropdown*/
-
 /*conteudo do site*/
 
-.carousel{
+#conteudoSite{
+    width: 1200px;
+    margin: auto
+}
+
+#boasVindas{
+    font-weight: bold;
+    font-size: 20pt;
+    text-align: center;
+    margin: 15px 0;
+    background-color: papayawhip;
+    padding: 15px;
+}
+
+#anuncios{
+    padding: 0;
+    margin: 0;
+}
+
+#anuncios span{
+    font-weight: bold;
+    font-size: 28pt;
+    opacity: 0;
+    transition: 0.3s;
+    color: white;
+}
+
+#anuncios #grandeAnuncio div .blocoAnuncio{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#anuncios .anuncioMenor div .blocoAnuncio{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#anuncios .anuncioMenor div .textoAnuncio{
     position: relative;
+    top: 100px; 
 }
 
-.carouselItem{
-    height: 300px;
-    background-color: gray;
-    padding: 1em;
-    display: none;
+#anuncios #grandeAnuncio div .textoAnuncio{
+    position: relative;
+    top: 225px;   
 }
 
-.carouselItem-selected{
-    display: block;
-}
-
-.carouselNav{
-    width: 100%;
-    padding: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.anuncioMenor div{
+    width: 250px;
+    height: 250px;
+    float: right;
+    margin-right: 345px;
     text-align: center;
 }
 
-.carouselButton{
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
+.anuncioMenor:nth-child(2) div{
+    background: url(../assets/produtos/celular.png) no-repeat;
+    background-size: 100%;
 }
 
-.carouselButton-selected{
-    background-color: rgba(255, 255, 255, 0.5);
+#anuncios .anuncioMenor:nth-child(2):hover div span{
+    opacity: 1;
+}
+
+.anuncioMenor:nth-child(3) div{
+    background: url(../assets/produtos/computador.jpg) no-repeat;
+    background-size: 100%;
+}
+
+#anuncios .anuncioMenor:nth-child(3):hover div span{
+    opacity: 1;
+}
+
+.anuncioMenor:nth-child(4) div{
+    background: url(../assets/produtos/sofa.png) no-repeat;
+    background-size: 100%;
+    margin-right: 95px;
+    margin-top: -500px;
+}
+
+#anuncios .anuncioMenor:nth-child(4):hover div span{
+    opacity: 1;
+}
+
+.anuncioMenor:nth-child(5) div{
+    background: url(../assets/produtos/cadeiraGamer.png) no-repeat;
+    background-size: 100%;
+    margin-right: 95px;
+    margin-top: -250px;
+}
+
+#anuncios .anuncioMenor:nth-child(5):hover div span{
+    opacity: 1;
+}
+
+#grandeAnuncio div{
+    width: 500px;
+    height: 500px;
+    background: url(../assets/produtos/geladeira.png) no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-left: 105px;
+    text-align: center;
+}
+
+#anuncios #grandeAnuncio:hover div span{
+    opacity: 1;
 }
 
 /*Fim conteudo do site*/
