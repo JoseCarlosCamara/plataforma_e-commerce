@@ -126,86 +126,13 @@ body{
 #anuncios{
     padding: 0;
     margin: 0;
-}
-
-#anuncios span{
-    font-weight: bold;
-    font-size: 28pt;
-    opacity: 0;
-    transition: 0.3s;
-    color: white;
-}
-
-#anuncios #grandeAnuncio div .blocoAnuncio{
-    display: inline-block;
-    width: 500px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-#anuncios .anuncioMenor div .blocoAnuncio{
-    display: inline-block;
-    width: 250px;
-    height: 250px;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-#anuncios .anuncioMenor div .textoAnuncio{
-    position: relative;
-    top: 100px; 
-}
-
-#anuncios #grandeAnuncio div .textoAnuncio{
-    position: relative;
-    top: 225px;   
-}
-
-.anuncioMenor div{
-    width: 250px;
-    height: 250px;
-    float: right;
-    margin-right: 345px;
     text-align: center;
 }
 
-.anuncioMenor:nth-child(2) div{
-    background: url(../assets/produtos/celular.png) no-repeat;
-    background-size: 100%;
-}
-
-#anuncios .anuncioMenor:nth-child(2):hover div span{
-    opacity: 1;
-}
-
-.anuncioMenor:nth-child(3) div{
-    background: url(../assets/produtos/computador.jpg) no-repeat;
-    background-size: 100%;
-}
-
-#anuncios .anuncioMenor:nth-child(3):hover div span{
-    opacity: 1;
-}
-
-.anuncioMenor:nth-child(4) div{
-    background: url(../assets/produtos/sofa.png) no-repeat;
-    background-size: 100%;
-    margin-right: 95px;
-    margin-top: -500px;
-}
-
-#anuncios .anuncioMenor:nth-child(4):hover div span{
-    opacity: 1;
-}
-
-.anuncioMenor:nth-child(5) div{
-    background: url(../assets/produtos/cadeiraGamer.png) no-repeat;
-    background-size: 100%;
-    margin-right: 95px;
-    margin-top: -250px;
-}
-
-#anuncios .anuncioMenor:nth-child(5):hover div span{
-    opacity: 1;
+#anuncios a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
 
 #grandeAnuncio div{
@@ -214,15 +141,132 @@ body{
     background: url(../assets/produtos/geladeira.png) no-repeat;
     background-size: 100%;
     float: left;
-    margin-left: 105px;
-    text-align: center;
+    margin-left: 100px;
 }
 
-#anuncios #grandeAnuncio:hover div span{
+#grandeAnuncio .textoAnuncio{
+    position: relative;
+    top: 215px;
+    font-size: 42pt;
+}
+
+#grandeAnuncio .blocoAnuncio{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#grandeAnuncio .blocoAnuncio, #grandeAnuncio .textoAnuncio{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#grandeAnuncio:hover .blocoAnuncio, #grandeAnuncio .textoAnuncio{
+    opacity: 1;
+}
+
+#anunciosMenores{
+    height: 500px;
+    width: 500px;
+    float: right;
+    margin-right: 100px;
+}
+
+#anunciosMenores .textoAnuncio{
+    position: relative;
+    top: 100px;
+    font-size: 28pt;
+}
+
+.anuncioMenor{
+    width: 250px;
+    height: 250px;
+    float: right;
+}
+
+#anunciosMenores .blocoAnuncio{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.anuncioMenor:nth-child(1){
+    background: url(../assets/produtos/celular.png) no-repeat;
+    background-size: 100%;
+}
+
+.anuncioMenor:nth-child(2){
+    background: url(../assets/produtos/computador.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.anuncioMenor:nth-child(3){
+    background: url(../assets/produtos/sofa.png) no-repeat;
+    background-size: 100%;
+}
+
+.anuncioMenor:nth-child(4){
+    background: url(../assets/produtos/cadeiraGamer.png) no-repeat;
+    background-size: 100%;
+}
+
+.anuncioMenor .textoAnuncio, .anuncioMenor .blocoAnuncio{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.anuncioMenor:nth-child(1):hover .textoAnuncio, .anuncioMenor:nth-child(1):hover .blocoAnuncio{
+    opacity: 1; 
+}
+
+.anuncioMenor:nth-child(2):hover .textoAnuncio, .anuncioMenor:nth-child(2):hover .blocoAnuncio{
+    opacity: 1;
+}
+
+.anuncioMenor:nth-child(3):hover .textoAnuncio, .anuncioMenor:nth-child(3):hover .blocoAnuncio{
+    opacity: 1;
+}
+
+.anuncioMenor:nth-child(4):hover .textoAnuncio, .anuncioMenor:nth-child(4):hover .blocoAnuncio{
     opacity: 1;
 }
 
 /*Fim conteudo do site*/
+
+/*Rodapé*/
+
+#rodape{
+    background-color: powderblue;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#conteudoRodape p{
+    display: inline-block;
+    width: 600px;
+    font-weight: bold;
+    text-align: justify;
+    margin-left: 150px;
+}
+
+#conteudoRodape{
+    width: 1200px;
+    margin: auto;
+}
+
+#linkIcons{
+    display: inline-block;
+    margin-left: 25px; 
+}
+
+#linkIcons img{
+    border-radius: 50px;
+    margin: 0 10px;
+}
+
+/*Fim do Rodapé*/
 
 .clear{
     clear: both;
