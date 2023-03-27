@@ -52,21 +52,54 @@ body{
 }
 
 #departamentos{
+    list-style-type: none;
     text-align: center;
-}   
+}
 
 #departamentos li{
     display: inline-block;
-    padding: 10px 10px 10px 10px;
-    margin-top: 20px;
-    color: black;
+    padding: 10px 20px
 }
 
-#departamentos li:hover{
+.dropdownBtn{
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.dropdown:hover .dropdownBtn{
     background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownItens{
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+}
+
+.dropdownItens a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
     font-weight: bold;
 }
 
+.dropdownItens a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdownItens{
+    display: block;
+}
 
 /*Fim Cabeçalho*/
 
