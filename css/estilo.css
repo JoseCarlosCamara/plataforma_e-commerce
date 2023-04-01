@@ -271,6 +271,21 @@ body{
     text-align: center;
 }
 
+#pagina1{
+    display: inline-block;
+    transition: 0.3s;
+}
+
+#pagina2{
+    display: none;
+    transition: 0.3s;
+}
+
+#pagina3{
+    display: none;
+    transition:0.3s;
+}
+
 .promoItem{
     width: 190px;
     height: 300px;
@@ -285,6 +300,8 @@ body{
 
 .promoItem:hover{
     opacity: 1;
+    cursor: pointer; 
+    box-shadow: 2.5px 5px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .price{
@@ -320,6 +337,15 @@ body{
 
 .btnCarousel:hover{
     cursor: pointer;
+}
+
+.produtosDiversos{
+    background-color: white;
+    height: 300px;
+    padding: 10px;
+    text-align: justify;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 /*Fim conteudo do site*/
