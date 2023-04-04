@@ -30,6 +30,10 @@ body{
     margin-right: 1%;
 }
 
+#usuario a{
+    color: black;
+}
+
 #icons{
     float: right;
     margin: -20px 10px 0 0;
