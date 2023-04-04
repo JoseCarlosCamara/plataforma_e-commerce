@@ -1,0 +1,226 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 1300px; 
+    padding: 0;
+    margin: 0;
+    background-color: thistle;
+}
+
+/*Formatação do cabeçalho*/
+
+#conteudo{
+    width: 1250px;
+    margin: auto;
+    background-color: white;
+}
+
+#head{
+    padding: 10px 0 0 0;
+    background-color: powderblue;
+    margin-bottom: -16px;
+}
+
+#areaUsuario{
+    width: 80%;
+    margin: auto;
+}
+
+#conteudoHead{
+    width: 1200px;
+    margin: auto;
+}
+
+#usuario{
+    width: 210px;
+    float: right;
+    margin-top: -35px;
+    margin-right: 1%;
+}
+
+#usuario a{
+    color: black;
+}
+
+#icons{
+    float: right;
+    margin: -20px 10px 0 0;
+}
+
+#icons a{
+    padding: 0 2.5px;
+}
+
+#conteudoHead h1{
+    font-size: 50pt;
+    padding: 0;
+    margin: 0;
+    width: 290px;
+}
+
+#conteudoHead h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+#departamentos{
+    list-style-type: none;
+    text-align: center;
+}
+
+#departamentos li{
+    display: inline-block;
+    padding: 10px 20px
+}
+
+.dropdownBtn{
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.dropdown:hover .dropdownBtn{
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownItens{
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+}
+
+.dropdownItens a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdownItens a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdownItens{
+    display: block;
+}
+
+/*Fim Cabeçalho*/
+
+/*Barra de pesquisa*/
+
+#barraPesquisa{
+    width: 45%;
+    margin-left: 32%;
+    margin-top: -50px;
+    height: 30px;
+}
+
+#barra{
+    width: 80%;
+    height: 93%;
+    float: left;
+    border: none;
+    background-color: oldlace;
+    border-radius: 5px 0 0 5px;
+}
+
+#bttPesquisa{
+    width: 65px;
+    height: 100%;
+    border: none;
+    float: left;
+    border-radius: 0 5px 5px 0;
+    background-color: lightseagreen;
+}
+
+#bttPesquisa:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+#bttPesquisa:active{
+    background-color: dodgerblue;
+}
+
+/*Fim Barra de pesquisa*/
+
+/*Formatação da area de filtros*/
+
+#filtros{
+    width: 275px;
+    padding: 10px 0;
+    padding-left: 15px;
+    background-color: oldlace;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.filtrosItem{
+    margin-bottom: 20px;
+    font-size: 13pt;
+}
+
+.filtrosItem h4{
+    margin: 10px 0;
+}
+
+.filtrosItem input{
+    margin-left: 10px;
+}
+
+/*Fim da area de filtros*/
+
+/*Formatação dos resultados*/
+
+#resultados{
+    margin-right: 30px;
+    margin-top: 20px;
+    float: right;
+    width: 900px;
+    text-align: center;
+}
+
+.resultadoItem{
+    display: inline-block;
+    width: 200px;
+    height: 275px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 5px;
+    border: solid rgba(0, 0, 0, 0.2) 1px;
+}
+
+.resultadoItem:hover{
+    cursor: pointer;
+}
+
+.resultadoItem img{
+    margin: 25px 0px 0 10px;
+}
+
+.resultadoItem span{
+    height: 150px;
+    margin-bottom: 25px;
+    margin: 25px 15px;
+}
+
+.descricao{
+    display: inline-block;
+    width: 100px;
+    height: 250px;
+}
+
+
+/*Fim dos resultados*/
+
+.clear{
+    clear: both;
+}
