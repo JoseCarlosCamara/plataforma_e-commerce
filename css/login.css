@@ -93,10 +93,9 @@ body{
 }
 
 .formulario{
-    width: 92%;
+    width: 90%;
     margin: 50px auto;
     text-align: center;
-    border: solid red 1px;
 }
 
 .formulario fieldset{
@@ -104,6 +103,7 @@ body{
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     padding: 10px;
+    width: 550px;
 }
 
 .formulario fieldset legend{
@@ -125,8 +125,13 @@ body{
     border-radius: 5px;
 }
 
+#cases{
+    width: 94.6%;
+    margin: auto;
+}
+
 #endereco{
-    float: right;
+    float: left;
 }
 
 #infoPessoais{
@@ -134,7 +139,7 @@ body{
 }
 
 #email{
-    width: 83.5%; 
+    width: 82%; 
     min-width: 33.33; 
 }
 
@@ -155,17 +160,17 @@ body{
 }
 
 #rua{
-    width: 64.2%;
+    width: 65%;
     margin-right: 0;
 }
 
 #numCasa{
-    width: 8%;
+    width: 9.3%;
     margin-left: 0;
 }
 
 #complemento{
-    width: 79%;
+    width: 82%;
 }
 
 #btnCadastrar{
