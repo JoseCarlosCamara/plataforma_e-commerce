@@ -18,45 +18,46 @@
     </div>
 
     <div id="areaCadastro">
-        <form class="formulario" id="infoPessoais">
-            <fieldset>
-                <legend>
-                    Informações pessoais
-                </legend>
-                <div>
-                <input type="text" placeholder="Nome*">
-                <input type="text" placeholder="Sobrenome*">
-                <br>
-                <input type="text" placeholder="E-mail*" id="email">
-                <br>
-                <input type="text" placeholder="Crie sua senha*">
-                <input type="text" placeholder="Confirme sua senha*">
-                <br>
-                <input type="tel" placeholder="Telefone 1*">
-                <input type="tel" placeholder="Telefone 2">
-                <br>
-                <input type="text" placeholder="Data de nascimento">
-                <input type="text" placeholder="CPF/CNPJ*"> 
-            </fieldset>
-        </form>
-
-        <form class="formulario" id="infoEndereco">
-            <fieldset>
-                <legend>
-                    Endereço
-                </legend>
-                <div>
-                    <input type="text" placeholder="CEP*" id="cep">
-                    <input type="text" placeholder="Cidade*" id="cidade">
-                    <input type="text" placeholder="Estado*" id="estado">
+        <form class="formulario">
+            <div id="cases">
+                <fieldset id="infoPessoais">
+                    <legend>
+                        Informações pessoais
+                    </legend>
+                    <div>
+                    <input type="text" placeholder="Nome*">
+                    <input type="text" placeholder="Sobrenome*">
                     <br>
-                    <input type="text" placeholder="Rua*" id="rua">
-                    <input type="text" placeholder="Numero*" id="numCasa">
+                    <input type="text" placeholder="E-mail*" id="email">
                     <br>
-                    <input type="text" placeholder="Complemento" id="complemento">
-                </div>
-            </fieldset>
-            <input type="submit" value="Cadastrar-se" id="btnCadastrar"> 
+                    <input type="text" placeholder="Crie sua senha*">
+                    <input type="text" placeholder="Confirme sua senha*">
+                    <br>
+                    <input type="tel" placeholder="Telefone 1*">
+                    <input type="tel" placeholder="Telefone 2">
+                    <br>
+                    <input type="text" placeholder="Data de nascimento">
+                    <input type="text" placeholder="CPF/CNPJ*"> 
+                </fieldset>
+                <fieldset id="endereco">
+                    <legend>
+                        Endereço
+                    </legend>
+                    <div>
+                        <input type="text" placeholder="CEP*" id="cep">
+                        <input type="text" placeholder="Cidade*" id="cidade">
+                        <input type="text" placeholder="Estado*" id="estado">
+                        <br>
+                        <input type="text" placeholder="Rua*" id="rua">
+                        <input type="text" placeholder="Numero*" id="numCasa">
+                        <br>
+                        <input type="text" placeholder="Complemento" id="complemento">
+                    </div>
+                </fieldset>
+            </div>
+            <br>            
+            <div class="clear"></div>
+            <input type="button" value="Enviar" id="btnCadastrar"> 
         </form>
     </div>
 </body>

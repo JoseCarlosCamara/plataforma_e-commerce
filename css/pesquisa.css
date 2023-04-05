@@ -218,6 +218,28 @@ body{
     height: 250px;
 }
 
+.price{
+    font-weight: bold;
+    color: green;
+    font-size: 16pt;
+}
+
+.labelPrice{
+    margin-left: 10px;
+}
+
+.inputPrice{
+    width: 100px;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 2.5px;
+    border-radius: 5px;
+    border: solid rgba(0, 0, 0, 0.2) 1px;
+}
+
+input[type="range"]{
+    width: 240px; 
+}
 
 /*Fim dos resultados*/
 
